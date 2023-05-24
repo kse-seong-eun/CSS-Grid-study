@@ -1,0 +1,29 @@
+⭐️ Flex box
+
+.father{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    height: 190vh;
+    flex-wrap: nowrap;
+}
+.child{
+    width: 200px;
+    height: 200px;
+    background: peru;
+    color : white;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child:nth-child(2) {
+    align-self: center;
+    order: 1; 
+    background: black;
+    flex-shrink: 3;
+}
+
+.child:nth-child(3) {
+    align-self: flex-end;
+}

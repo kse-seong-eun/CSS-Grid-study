@@ -1,0 +1,169 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-color: #930505;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+}
+
+/* gird */
+.grid {
+  display: grid;
+  height: 70vh;
+  width: 100vw;
+  grid-template-columns: 20px 1fr 1fr 20px;
+  grid-template-rows: 20px 1fr 20px;
+  margin: 10px;
+  border: 2px solid #ff6e38;
+  color: #ff6e38;
+  letter-spacing: 1rem;
+  text-align: center;
+  line-height: 1.1;
+  overflow: hidden;
+}
+/* TOP */
+.frame-top {
+  background-color: white;
+  height: 20px;
+  grid-column: span 4;
+  white-space: nowrap;
+}
+
+/* LEFT */
+.frame-left {
+  background-color: #ff6e38;
+  width: 20px;
+  grid-row-start: 2;
+  grid-row: 2/3;
+  grid-column-start: 1;
+  writing-mode: vertical-lr;
+  display: flex;
+}
+.left-top {
+  background-color: #ff6e38;
+  height: 50%;
+  color: white;
+  text-orientation: upright;
+}
+.left-mid {
+  background-color: white;
+  height: 30%;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-decoration: underline;
+}
+.left-bottom {
+  height: 20%;
+  background-color: #5e1fff;
+  border-top: 2px solid #ff6e38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+/* RIGHT */
+.frame-right {
+  background-color: white;
+  width: 20px;
+  grid-row-start: 2;
+  grid-row: 2/3;
+  grid-column-start: 4;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right-top {
+  background-color: #5e1fff;
+  height: 70%;
+  width: 100%;
+}
+.right-bottom {
+  background-color: #ffc954;
+  height: 30%;
+  width: 100%;
+  border-top: 2px solid #ff6e38;
+}
+
+/* BOTTOM */
+.frame-bottom {
+  background-color: white;
+  grid-row-start: 3;
+  grid-column: span 4;
+  white-space: nowrap;
+  border-top: 2px solid #ff6e38;
+}
+
+/* IMAGE */
+.image-left {
+  grid-column: 2/3;
+  border-top: 2px solid #ff6e38;
+  border-left: 2px solid #ff6e38;
+  background-image: url("https://i.pinimg.com/564x/52/47/80/524780dbb2627079bbc1c2362c6f1a5d.jpg");
+  background-size: cover;
+}
+
+.image-right {
+  grid-column: 3/4;
+  border-right: 2px solid #ff6e38;
+  border-top: 2px solid #ff6e38;
+  background-image: url("https://i.pinimg.com/564x/01/dc/20/01dc20eed581eb5c42b0b1ac89972823.jpg");
+  background-size: cover;
+}
+
+/* TITLE */
+.title {
+  position: fixed;
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+  border: none;
+  text-align: center;
+  color: white;
+}
+h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+/* 아래는 HTML부분임 */
+/* <div class="title">
+      <h3>hello!</h3>
+      <h1>colors of</h1>
+      <h1>VIETNAM</h1>
+    </div>
+    <span class="grid">
+      <div class="frame-top">Colors of vietnam Colors of vietnam</div>
+      <div class="frame-left">
+        <div class="left-top">21°2'N 105°51'E </div>
+        <div class="left-mid"> Colors of vietnam </div>
+        <div class="left-bottom">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+      </div>
+      <div class="frame-right">
+        <div class="right-top">21°2'N 105°51'E </div>
+        <div class="right-bottom">21.033</div>
+        <script src="https://kit.fontawesome.com/3611a55dea.js" crossorigin="anonymous"></script>
+      </div>
+      <div class="frame-bottom">CColors of vietnam Colors of vietnam</div>
+      <div class="image-left"></div>
+      <div class="image-right"></div>
+    </span> */
